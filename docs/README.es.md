@@ -1,6 +1,6 @@
 # Codex Project Recovery
 
-[Português (predeterminado)](../README.md) · [English](README.en.md) · [简体中文](README.zh-CN.md) · **Español**
+[English](README.en.md) · [Português](README.pt.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md)
 
 Recupere la organización de proyectos en **Codex Desktop para Windows** cuando desaparecen de la barra lateral, pero las conversaciones siguen en Recientes.
 
@@ -37,7 +37,7 @@ La estructura interna puede cambiar entre versiones de Codex. Una estructura inc
 py -3 .\codex_recovery.py plan --lang es
 ```
 
-Si no existe `py`, sustituya `py -3` por `python` y confirme la versión 3.10+. Doble clic en `codex-recovery.cmd` también muestra la vista previa y mantiene abierta la ventana. El idioma predeterminado es portugués.
+Si no existe `py`, sustituya `py -3` por `python` y confirme la versión 3.10+. Doble clic en `codex-recovery.cmd` también muestra la vista previa y mantiene abierta la ventana. El idioma predeterminado es inglés.
 
 ## Aplicar
 
@@ -89,7 +89,7 @@ Para restaurar una versión concreta, cierre todos los procesos que escriban y c
 
 ## Idiomas, privacidad y contribución
 
-Los enlaces superiores cambian la documentación completa. La consola acepta `--lang pt|en|zh|es`; los identificadores JSON y algunos errores técnicos permanecen en inglés. Chino simplificado usa `zh`/`zh-CN`, no `CH`.
+La página principal empieza en inglés e incluye las traducciones en secciones desplegables del mismo README. La consola acepta `--lang pt|en|zh|es`; los identificadores JSON y algunos errores técnicos permanecen en inglés. Chino simplificado usa `zh`/`zh-CN`, no `CH`.
 
 El código público no da acceso a su ordenador ni a repositorios privados. Cada persona lo ejecuta sobre sus propios archivos. Las copias contienen nombres, rutas, metadatos e índices privados. Se excluyen `auth.json` y transcripciones, pero las demás copias siguen siendo confidenciales.
 

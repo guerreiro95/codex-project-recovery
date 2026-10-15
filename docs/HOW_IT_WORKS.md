@@ -44,4 +44,4 @@ Backups use SQLite's backup API, not a raw copy of an open WAL database. The ori
 
 ## Support expectations
 
-Version 0.1.0 is experimental. Test fixtures cover the supported schema, not every Codex release, damaged database, remote project or account migration. Unknown schemas require review. An empty registry may also be intentional; watch mode does not restore it automatically.
+Version 0.1.1 is experimental. Test fixtures cover the supported schema, not every Codex release, damaged database, remote project or account migration. Unknown schemas require review. An empty registry may also be intentional; watch mode does not restore it automatically.

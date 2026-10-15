@@ -153,6 +153,12 @@ class RecoveryTests(unittest.TestCase):
             self.assertEqual(result, 0)
             self.assertIn(module.LANGUAGES[language]['preview'], output.getvalue())
 
+    def test_cli_defaults_to_english(self):
+        with contextlib.redirect_stdout(io.StringIO()) as output:
+            result = module.main(['plan', '--codex-home', str(self.home), '--backup-dir', str(self.root / 'backups')])
+        self.assertEqual(result, 0)
+        self.assertIn(module.LANGUAGES['en']['preview'], output.getvalue())
+
 
 if __name__ == '__main__':
     unittest.main()

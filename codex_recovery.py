@@ -14,7 +14,7 @@ import sys
 import tempfile
 import time
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 LANGUAGES = {
     'pt': {
         'description': 'Recuperação local de projetos Codex. Prévia por padrão.',
@@ -135,7 +135,7 @@ def app_running():
 
 
 class Recovery:
-    def __init__(self, home, backup_dir, lang='pt'):
+    def __init__(self, home, backup_dir, lang='en'):
         self.home = Path(home).expanduser().resolve()
         self.backups = Path(backup_dir).expanduser().resolve()
         if self.backups == self.home or self.home in self.backups.parents:
@@ -333,7 +333,7 @@ class Recovery:
 
 def main(argv=None):
     bootstrap = argparse.ArgumentParser(add_help=False)
-    bootstrap.add_argument('--lang', choices=LANGUAGES, default='pt')
+    bootstrap.add_argument('--lang', choices=LANGUAGES, default='en')
     language, _ = bootstrap.parse_known_args(argv)
     messages = LANGUAGES[language.lang]
     parser = argparse.ArgumentParser(description=messages['description'], parents=[bootstrap])

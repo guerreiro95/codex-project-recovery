@@ -1,6 +1,6 @@
 # Codex Project Recovery
 
-[Português (default)](../README.md) · **English** · [简体中文](README.zh-CN.md) · [Español](README.es.md)
+[English](README.en.md) · [Português](README.pt.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md)
 
 Recover project organization in **Codex Desktop for Windows** when sidebar projects disappear but conversations remain in Recents.
 
@@ -37,7 +37,7 @@ Codex internal schemas can change. An incompatible schema stops recovery. Synthe
 py -3 .\codex_recovery.py plan --lang en
 ```
 
-If `py` is unavailable, replace `py -3` with `python`; confirm it is Python 3.10+. Double-clicking `codex-recovery.cmd` also previews and keeps the window open. Without `--lang`, Portuguese is the default.
+If `py` is unavailable, replace `py -3` with `python`; confirm it is Python 3.10+. Double-clicking `codex-recovery.cmd` also previews and keeps the window open. Without `--lang`, English is the default.
 
 ## Apply
 
@@ -89,7 +89,7 @@ To restore a specific known-good snapshot, close all writers and preserve curren
 
 ## Languages
 
-README links switch complete documentation. CLI messages support `--lang pt|en|zh|es`. JSON keys and some low-level technical errors remain English. Simplified Chinese uses `zh`/`zh-CN`, not `CH`.
+The repository homepage starts in English and includes expandable translations in the same README. CLI messages support `--lang pt|en|zh|es`. JSON keys and some low-level technical errors remain English. Simplified Chinese uses `zh`/`zh-CN`, not `CH`.
 
 ## Privacy and contribution
 

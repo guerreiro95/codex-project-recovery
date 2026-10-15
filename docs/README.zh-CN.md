@@ -1,6 +1,6 @@
 # Codex Project Recovery
 
-[Português（默认）](../README.md) · [English](README.en.md) · **简体中文** · [Español](README.es.md)
+[English](README.en.md) · [Português](README.pt.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md)
 
 当 **Windows 版 Codex Desktop** 的侧边栏项目消失，但对话仍能在“最近”列表中找到时，此工具可尝试恢复本地项目组织。
 
@@ -37,7 +37,7 @@ Codex 的内部数据库结构可能变化。不兼容的结构会使工具停�
 py -3 .\codex_recovery.py plan --lang zh
 ```
 
-如果没有 `py`，可将 `py -3` 替换为 `python`，但请确认版本至少为 3.10。双击 `codex-recovery.cmd` 也会显示预览并保留窗口。未指定 `--lang` 时默认使用葡萄牙语。
+如果没有 `py`，可将 `py -3` 替换为 `python`，但请确认版本至少为 3.10。双击 `codex-recovery.cmd` 也会显示预览并保留窗口。未指定 `--lang` 时默认使用英语。
 
 ## 应用恢复
 
@@ -89,7 +89,7 @@ py -3 .\codex_recovery.py watch --lang zh
 
 ## 语言、隐私与贡献
 
-顶部链接可切换完整文档。命令行支持 `--lang pt|en|zh|es`；JSON 字段名和部分底层错误保持英文。简体中文使用 `zh`/`zh-CN`，而不是 `CH`。
+仓库主页默认显示英文，并在同一 README 中提供可展开的完整翻译。命令行支持 `--lang pt|en|zh|es`；JSON 字段名和部分底层错误保持英文。简体中文使用 `zh`/`zh-CN`，而不是 `CH`。
 
 公开源代码不会授予他人访问您电脑或私人仓库的权限。每位用户只在自己的机器上操作自己的数据。生成的备份可能含有私密项目名、路径、元数据和对话索引。虽然不会复制 `auth.json` 或会话转录，其他备份内容仍然需要保密。
 
