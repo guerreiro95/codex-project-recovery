@@ -1,0 +1,17 @@
+# Recovery data must never be committed.
+__pycache__/
+*.py[cod]
+.venv/
+.codex/
+.env*
+backups/
+reports/
+*.sqlite*
+*.db*
+*.json
+*.jsonl
+*.log
+*.bak
+*.tmp
+*.zip
+recovery-*
